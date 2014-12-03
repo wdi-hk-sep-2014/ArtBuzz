@@ -1,0 +1,9 @@
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: red;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: red;
+  background-color: transparent;
+}
