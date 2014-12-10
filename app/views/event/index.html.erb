@@ -1,0 +1,14 @@
+<h1>My Events</h1>
+
+<%= @content %>
+
+<hr>
+
+<% unless @events.count == 0 %>
+  <% @events.each do |e| %>
+    <p><%= "Title: " + e.title %></p>
+  <% end %>
+
+<% else %>
+  <p>Sorry, there are currently no upcoming events.</p>
+<% end %>
