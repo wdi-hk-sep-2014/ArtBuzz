@@ -6,10 +6,16 @@
 <hr>
 
 <div class="row">
-  <div class="col-xs-9 col-sm-6">
-    <!-- All Events -->
+  <div class="col-xs-9 col-sm-6 event">
+    <h3><%= Event.first.artist %> - <%= Event.first.title %></h3>
+    <div class="rest" style="display:none">
+      <p><%= Venue.first.name %>
+      <p><%= Venue.first.address %>
+      <p><%= Venue.first.district %>
+      <p><%= Event.first.date %>
+      <p><%= Event.first.time %>
+    </div>
   </div>
   <div class="col-xs-9 col-sm-6">
-    <!-- My Events -->
   </div>
 </div>

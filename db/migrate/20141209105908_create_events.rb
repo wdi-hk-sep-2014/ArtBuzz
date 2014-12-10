@@ -4,7 +4,8 @@ class CreateEvents < ActiveRecord::Migration
       t.string :title
       t.string :artist
       t.date :date
-      t.datetime :time
+      t.time :time
+      t.references :venue
 
       t.timestamps
     end

@@ -17,7 +17,8 @@ ActiveRecord::Schema.define(version: 20141209110141) do
     t.string   "title"
     t.string   "artist"
     t.date     "date"
-    t.datetime "time"
+    t.time     "time"
+    t.integer  "venue_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
