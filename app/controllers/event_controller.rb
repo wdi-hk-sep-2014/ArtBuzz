@@ -9,14 +9,17 @@ class EventController < ApplicationController
 
   # Get /events/1
   # Get /events/1.json
+  ##################### What does "show" do, and why is it undefined in the scaffold?
   def show
   end
 
   # Get /events/1/edit
+  ##################### Why is it undefined in the scaffold? Difference between "edit" and "update"?
   def edit
   end
 
   # Get /events/new
+  ##################### Why have "new" when "create" does the same thing?
   def new
     @event = Event.new
   end
@@ -31,8 +34,8 @@ class EventController < ApplicationController
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
-        format.html { render :new }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
+        format.html { render :new } ###### is this ":new" the "new.html.erb" or the "def new"?
+        format.json { render json: @event.errors, status: :unprocessable_entity } ###### who defined ":unprocessable_entity"?
       end
     end
   end
@@ -57,7 +60,7 @@ class EventController < ApplicationController
       @event.destroy
       respond_to do |format|
         format.html { redirect to events_url, note: 'Event was successfully destroyed.' }
-        format.json { head :no_content }
+        format.json { head :no_content } ##### who defined the ":no_content" there?
     end
   end
 
