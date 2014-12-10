@@ -6,16 +6,17 @@ class VenueController < ApplicationController
 
 
   def edit
-
   end
 
+  def show
+  end
 
   def new
-
+    @venues = Venue.create(venue_params)
   end
 
 
-  def remove
+  def destroy
 
   end
 

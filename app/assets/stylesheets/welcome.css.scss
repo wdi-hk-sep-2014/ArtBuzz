@@ -6,8 +6,18 @@ body {
   padding: 70px;
 }
 
-.col-xs-8 {
+.all-events{
   background-color: #D3D3D3;
+  height: 100px;
+  text-align: center;
+  padding: 2%;
+  font-family: Helvetica;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.my-events{
+  background-color: red;
   height: 100px;
   text-align: center;
   padding: 2%;
