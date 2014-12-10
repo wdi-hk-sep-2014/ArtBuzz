@@ -1,0 +1,14 @@
+<h1>Venues</h1>
+
+<%= @content_venues %>
+
+<hr>
+
+<% unless @venues.count == 0 %>
+  <% @venues.each do |v| %>
+    <p><%= "Name: " + v.title %></p>
+  <% end %>
+
+<% else %>
+  <p>Sorry, there are currently no venues in Hong Kong.</p>
+<% end %>
