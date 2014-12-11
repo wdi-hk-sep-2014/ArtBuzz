@@ -5,9 +5,9 @@
 
 <hr>
 
-<% unless @venues.count == 0 %>
+<% unless @venues.all == 0 %>
   <% @venues.each do |v| %>
-    <p><%= "Name: " + v.title %></p>
+    <a><%= v.name %></a>
   <% end %>
 
 <% else %>

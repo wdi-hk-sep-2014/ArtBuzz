@@ -5,7 +5,7 @@
 
 <% unless @events.count == 0 %>
   <% @events.each do |e| %>
-    <p><%= "Title: " + e.title %></p>
+    <p><%= e.title %> | <%= e.date %></p>
   <% end %>
 
 <% else %>
