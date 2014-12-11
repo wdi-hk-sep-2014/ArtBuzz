@@ -1,5 +1,5 @@
-<h1>Venues</h1>
-<p>Below is a list of all venues.</p>
+<h1>Galleries</h1>
+<p>Below is a list of all galleries in Hong Kong.</p>
 
 <%= @content_venues %>
 
@@ -7,7 +7,7 @@
 
 <% unless @venues.all == 0 %>
   <% @venues.each do |v| %>
-    <p><a><%= v.name %></a></p>
+    <p><a><%= v.name %></a> | <%= v.district %></p>
   <% end %>
 
 <% else %>
