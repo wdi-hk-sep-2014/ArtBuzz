@@ -11,6 +11,7 @@ class EventController < ApplicationController
   # Get /events/1.json
   ##################### What does "show" do, and why is it undefined in the scaffold?
   def show
+    respond_with(@events)
   end
 
   # Get /events/1/edit
