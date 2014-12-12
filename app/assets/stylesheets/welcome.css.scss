@@ -7,7 +7,7 @@ body {
 }
 
 .all-events{
-  background-color: #D3D3D3;
+  background-color: #f4f4f4;
   height: 100px;
   text-align: center;
   padding: 2%;
@@ -24,4 +24,9 @@ body {
   font-family: Helvetica;
   font-size: 2.5em;
   font-weight: lighter;
+}
+
+.event {
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 5px #888888;
 }
