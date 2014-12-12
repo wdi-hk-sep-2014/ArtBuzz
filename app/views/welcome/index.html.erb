@@ -1,0 +1,53 @@
+<div class="row head">
+  <div class="col-xs-9 col-sm-6 all-events">All Events</div>
+  <div class="col-xs-9 col-sm-6 my-events">My Events</div>
+</div>
+
+<hr>
+
+<div class="row" ng-controller="EventController">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="search">
+        <input type="search" ng-model="search" placeholder="Search..." size="50">
+      </div>
+    </div>
+    <div class="col-md-6 my-event-actions">
+      <a><span class="glyphicon glyphicon-print glyphs" aria-hidden="true"></span></a>
+      <a><span class="glyphicon glyphicon-map-marker glyphs" aria-hidden="true"></span></a>
+      <a><span class="glyphicon glyphicon-calendar glyphs" aria-hidden="true"></span></a>
+      <a><span class="glyphicon glyphicon-share glyphs" aria-hidden="true"></span></a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="col-md-6 event">
+
+    <div class="row events">
+      <div class="col-md-10">
+
+        <div class="event-card" ng-model="events">
+            <h3><%= Event.first.artist %> - "<%= Event.first.title %>"</h3>
+            <div class="rest">
+              <p><a target="_blank" href="http://<%= Venue.first.website %>"><%= Venue.first.name %></a>
+              <p><a target="_blank" href="http://maps.google.com/?q=<%= Venue.first.address %>"><%= Venue.first.address %></a> | <%= Venue.first.district %>
+              <p><a><%= Event.first.date %> | <%= Event.first.time %><a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-2 event-actions" ng-click="addEventToMyEvents()">
+        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="" ng-show="events_show">
+    <div class="col-md-6">
+  </div>
+
+</div>

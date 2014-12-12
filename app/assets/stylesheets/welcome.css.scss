@@ -1,0 +1,55 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding: 70px;
+}
+
+.head {
+  margin-top: 20px;
+}
+
+.all-events{
+  background-color: #f4f4f4;
+  height: 100px;
+  text-align: center;
+  padding: 2%;
+  font-family: Helvetica;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.my-events{
+  background-color: #FFCCD2;
+  height: 100px;
+  text-align: center;
+  padding: 2%;
+  font-family: Helvetica;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.event {
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.event-actions {
+  margin-top: 25px;
+  font-size: 3em;
+}
+
+.glyphs {
+  margin-left: 70px;
+  font-size: 25px;
+  letter-spacing: 50px;
+}
+
+.search {
+  margin-left: 10%;
+}
+
+h3 span {
+  font-weight: lighter;
+}

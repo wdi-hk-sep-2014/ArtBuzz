@@ -1,0 +1,13 @@
+<h1>Events</h1>
+<p>Below is a list of all upcoming gallery openings in Hong Kong.</p>
+
+<hr>
+
+<% unless @events.count == 0 %>
+  <% @events.each do |e| %>
+    <p><%= e.title %> | <%= e.date %></p>
+  <% end %>
+
+<% else %>
+  <p>Sorry, there are currently no upcoming events.</p>
+<% end %>
