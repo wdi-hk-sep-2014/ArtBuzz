@@ -5,15 +5,53 @@
 
 <hr>
 
-<div class="row">
-  <div class="col-xs-9 col-sm-6 event">
-    <h3><%= Event.first.artist %> - "<%= Event.first.title %>"</h3>
-    <div class="rest" style="display:none">
-      <p><a target="_blank" href="http://<%= Venue.first.website %>"><%= Venue.first.name %></a>
-      <p><a target="_blank" href="http://maps.google.com/?q=<%= Venue.first.address %>"><%= Venue.first.address %></a> | <%= Venue.first.district %>
-      <p><a><%= Event.first.date %> | <%= Event.first.time %><a>
+<div class="row" ng-controller="EventController">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="search">
+        <input type="search" ng-model="search" placeholder="Search..." size="50">
+      </div>
+    </div>
+    <div class="col-md-6 my-event-actions">
+      <span class="glyphicon glyphicon-print glyphs" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-map-marker glyphs" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-calendar glyphs" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-share glyphs" aria-hidden="true"></span>
     </div>
   </div>
-  <div class="col-xs-9 col-sm-6">
+
+  <hr>
+
+  <div class="col-md-6 event">
+
+    <div class="row events">
+      <div class="col-md-11">
+
+        <div class="event-card" ng-model="events">
+            <h3><%= Event.first.artist %> - "<%= Event.first.title %>"</h3>
+            <div class="rest">
+              <p><a target="_blank" href="http://<%= Venue.first.website %>"><%= Venue.first.name %></a>
+              <p><a target="_blank" href="http://maps.google.com/?q=<%= Venue.first.address %>"><%= Venue.first.address %></a> | <%= Venue.first.district %>
+              <p><a><%= Event.first.date %> | <%= Event.first.time %><a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-1 glyphs" ng-click="addEventToMyEvents()">
+
+        <button type="button" class="btn btn-success btn-md">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        </button>
+
+      </div>
+    </div>
+
   </div>
+
+  <div>
+    <div class="col-md-6">
+  </div>
+
 </div>

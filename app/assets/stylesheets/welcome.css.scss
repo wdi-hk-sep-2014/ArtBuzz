@@ -17,7 +17,7 @@ body {
 }
 
 .my-events{
-  background-color: red;
+  background-color: #FFCCD2;
   height: 100px;
   text-align: center;
   padding: 2%;
@@ -29,4 +29,18 @@ body {
 .event {
   background-color: #f4f4f4;
   box-shadow: 5px 5px 5px #888888;
+}
+
+// .glyphs{
+//   padding: 10px;
+// }
+
+.glyphs {
+  margin-left: 70px;
+  font-size: 25px;
+  letter-spacing: 50px;
+}
+
+.search {
+  margin-left: 10%;
 }
