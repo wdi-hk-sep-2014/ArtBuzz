@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @venue.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @venue.address %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @venue.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @venue.lng %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @venue.district %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @venue.hours %>
+</p>
+
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', venues_path %>
