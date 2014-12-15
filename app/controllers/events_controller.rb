@@ -9,6 +9,9 @@ class EventsController < ApplicationController
     if params[:order] == 'desc'
       @events = Event.order(date: :desc)
     end
+
+
+
   end
 
   # GET /events/1

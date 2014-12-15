@@ -29,13 +29,15 @@
 
 <div class="row">
 
-  <div class="col-md-5 all-events" ng-repeat="event in events | filter:query">
-    <div class="row">
+  <div class="col-md-5">
+    <div class="row single-event" ng-repeat="event in events | filter:query">
       <div class="col-md-10">
-        <p>{{event.artist}}</p>
-        <p>{{event.title}}</p>
-        <p>{{event.date}}</p>
-        <p>{{event.time}}</p>
+        <p><strong>Artist: </strong>{{event.artist}}</p>
+        <p><strong>Title: </strong><a>{{event.title}}</a></p>
+        <p><strong>Gallery: </strong><a>{{event.venue}}</a></p>
+        <p><strong>Location: </strong><a>{{event.address}}</a> | {{event.district}}</p>
+        <p><strong>Open:</strong> <a>{{event.open}} | {{event.time}}</a></p>
+        <p><strong>Close:</strong> <a>{{event.close}}</a></p>
       </div>
       <div class="col-md-2">
         <a><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
